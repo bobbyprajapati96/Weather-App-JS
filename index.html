@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  
+  <body onload=show() class="text-white">
+  
+<div class="weather">  
+
+  <div class="container">
+
+    <div class="row justify-content-evenly d-flex justify-content-around">
+      <div class="col ">
+        <!-- <div class="weather"> -->
+          <input
+            type="search"
+            list="suggestions"
+            class="weather_search"
+            placeholder="Enter City Name"
+          />
+          <datalist id="suggestions"></datalist>
+    
+      </div>
+    </div>
+    <div class="row  ">
+      <div class="col-4 ">
+        <div class="weather_today text-left">
+          <div class="col-4 weather_details">
+            <h2 class="weather_city">City</h2>
+            <p class="weather_day">Day</p>
+            <div class="weather_current">
+              <p class="weather_indicator weather_indicator--humidity">
+                <span class="value">50</span>%
+              </p>
+              <p class="weather_indicator weather_indicator--wind">
+                <span class="value">West, 5</span>m/s
+              </p>
+              <p class="weather_indicator weather_indicator--pressure">
+                <span class="value">1050</span>hPa
+              </p>
+            </div>
+          </div>
+          <!-- <img src="/images/clear-sky.png" alt="Clear sky" class="weather_image" />
+          <div class="weather_temperature">
+            <span class="value">+25</span> &deg;C
+          </div> -->
+        </div>
+  
+      </div>
+      <div class="col-4 text-center">
+        <div>
+           <img src="/images/clear-sky.png" alt="Clear sky" class=" img-fluid img-thumbnailt my-5 mx-2 text-left img weather_image " />
+        </div>
+      </div>
+      <div class="col-3 text-left">
+        <div class="weather_temperature">
+          <span class=" value">+25</span> &deg;C
+        </div> 
+        </div>
+       </div> 
+      </div>
+      <br/>
+      <div class=" row  mx-4 text-center weather_forecast d-flex justify-content-around">
+      <div class=" my-card col-2 col-sm-2  p-4 card  text-light " style=" background-color: #00AA9E ;width: 10rem;">
+        <img src="/images/clear-sky.png" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">+25</h5>
+          <p class="card-text">Day</p>
+        </div>
+      </div>
+      <div class="my-card col-2 col-sm-2  p-4 card  text-light " style="width: 10rem;">
+        <img src="/images/clear-sky.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">+25</h5>
+          <p class="card-text">Day</p>
+        </div>
+      </div>
+      <div class="my-card col-2 p-4 col-sm-2 card  text-light " style="width: 10rem;">
+        <img src="/images/clear-sky.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">+25</h5>
+          <p class="card-text">Day</p>
+        </div>
+      </div>
+      <div class="my-card col-2 p-4 col-sm-2  card text-light " style="width: 10rem;">
+        <img src="/images/clear-sky.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">+25</h5>
+          <p class="card-text">Day</p>
+        </div>
+      </div>
+      <div class="my-card col-2 p-4 col-sm-2   tcard  text-light" style="width: 10rem;">
+        <img src="/images/clear-sky.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">+25</h5>
+          <p class="card-text">Day</p>
+        </div>
+      </div>
+
+      </div>
+</div>
+
+
+
+
+
+    
+    
+    <script src="js/script.js"/></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </body>
+</html>
